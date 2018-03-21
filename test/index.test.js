@@ -9,7 +9,7 @@ test(`dom是否有非static类型的定位？获取定位方式，给dom添加�
     console.log(domPosition.hasPosition('fixed')); // false =>  是否有fixed类型的定位
     document.body.style.position = 'relative';
     console.log(domPosition.hasPosition('relative')); // true =>  是否有relative类型的定位
-    domPosition.setPosition('absolute'); // dom没有定位或者定位为static的时候，设置dom的定位为absolute，默认设置为relative
+    domPosition.setPosition('absolute'); // dom没有定位或者定位为static的时候，设置dom的定位为absolute，不传参数则默认设置为relative
     console.log(domPosition.hasPosition('relative')); // true =>  是否有relative类型的定位
     domPosition.setPosition('absolute', true); // 不管dom有没有定位，都把dom的定位设置成absolute
     console.log(domPosition.hasPosition('absolute')); // true =>  是否有absolute类型的定位
