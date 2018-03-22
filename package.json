@@ -1,6 +1,6 @@
 {
     "name": "zhf.dom-position",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "dom是否有非static类型的定位？获取定位方式，给dom添加定位。",
     "main": "dist/index.min.js",
     "scripts": {
